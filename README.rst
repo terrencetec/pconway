@@ -43,6 +43,7 @@ From source
 Debian based
 ^^^^^^^^^^^^
 (Not available yet)
+
 .. code:: bash
 
    sudo apt-get install pconway
@@ -51,8 +52,16 @@ Arch-based
 ^^^^^^^^^^
 (Not available yet)
 Install from AUR:
+
 .. code:: bash
+
    paru -Syu pconway
+
+or
+
+.. code:: bash
+
+   yay -Syu pconway
 
 
 Usage
