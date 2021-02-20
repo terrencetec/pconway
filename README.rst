@@ -131,4 +131,4 @@ Try out the package and file an issue if you find any!
 
 .. |screenshot default| image:: images/screenshot_default.png
     :alt: screenshot default
-    :target: https://codecov.io/gh/terrencetec/pconway/images/screenshot_default.png
+    :target: https://github.com/terrencetec/pconway/images/screenshot_default.png
