@@ -1,9 +1,9 @@
 """
 """
-import mypythonlibrary.helloworld
-import mypythonlibrary.clitools
+import pconway.helloworld
+import pconway.clitools
 
 
 def test_helloworld():
-    string = mypythonlibrary.helloworld.helloworlds(1)
+    string = pconway.helloworld.helloworlds(1)
     assert string == 'Hello World!'
