@@ -26,103 +26,62 @@ Dependencies
 
 Required
 ^^^^^^^^
-* Package 1
-* Package 2
-* Package 3
+* Numpy
+* Curse (Included in the Linux version of Python. For Windows users,
+  install windows-curse)
 
-Optional
-^^^^^^^^
-* Package 4
-
-Note on installing dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In principle, if you are using :code:`pip`, you don't have to install
-dependencies beforehand. When you install this package, :code`pip` will
-automatically install the required libraries. However if you are using Conda
-it is best to use its own package manager and not pip unless absolutely
-necessary.
-
-If you use conda:
-
-.. code:: bash
-
-   conda install -c conda-forge package1 package2
-
-Now, let's say package 3 is not available, then we can use pip. But,
-be sure to use :code:`which pip` to check if we are using the pip installed
-on the conda environment and not the global one.
-
-.. code:: bash
-
-   pip install package3
-
-Install from source
--------------------
-
+Installation
+------------
+From source
+^^^^^^^^^^^
 .. code:: bash
 
    git clone https://github.com/terrencetec/pconway.git
    cd pconway
    pip install .
 
+Debian based
+^^^^^^^^^^^^
+(Not available yet)
+.. code:: bash
+
+   sudo apt-get install pconway
+
+Arch-based
+^^^^^^^^^^
+(Not available yet)
+Install from AUR:
+.. code:: bash
+   paru -Syu pconway
+
+
+Usage
+=====
+.. code:: bash
+  $ gameoflife -h
+  usage: gameoflife [-h]
+                    [-c {black,blue,cyan,green,magenta,red,white,yellow}]
+                    [-C CHAR] [-b] [-s SPEED] [-m MUTATION_RATE]
+
+  Play Conway's game of life
+
+  optional arguments:
+    -h, --help            show this help message and exit
+    -c {black,blue,cyan,green,magenta,red,white,yellow}, --color {black,blue,cyan,green,magenta,red,white,yellow}
+                          Foreground color. Defaults 'white'
+    -C CHAR, --char CHAR  Character representing live cells.
+                          Defaults 'o'.
+    -b, --border          Border on the screen
+    -s SPEED, --speed SPEED
+                          Frame per second
+    -m MUTATION_RATE, --mutation-rate MUTATION_RATE
+                          Mutation rate
+
 How to Contribute
 =================
 
 Try out the package and file an issue if you find any!
 
-
-For Developers
-==============
-
-Standards and Tools
--------------------
-Please comply with the following standards/guides as much as possible.
-
-Coding style
-^^^^^^^^^^^^
-- **PEP 8**: https://www.python.org/dev/peps/pep-0008/
-
-CHANGELOG
-^^^^^^^^^
-- **Keep a Changelog**: https://keepachangelog.com/en/1.0.0/
-
-Versioning
-^^^^^^^^^^
-- **Semantic Versioning**: https://semver.org/spec/v2.0.0.html
-
-Packaging
-^^^^^^^^^
-- **PyPA**: https://www.pypa.io
-- **python-packaging**: https://python-packaging.readthedocs.io
-
-Documentation
-^^^^^^^^^^^^^
-- **NumPy docstrings**: https://numpydoc.readthedocs.io/en/latest/format.html
-- **Sphinx**: https://www.sphinx-doc.org/
-- **Read The Docs**: https://readthedocs.org/
-- **Documenting Python Code: A Complete Guide**: https://realpython.com/documenting-python-code/
-
-Cheat sheet
------------
-
-Sphinx
-^^^^^^
-
-Generate documentation base, in docs/,
-
-.. code:: bash
-
-   sphinx-quickstart
-
-Select separate build and source files when prompted.
-
-Preview documentation page with modified source, in docs/
-
-.. code:: bash
-
-   make html
-
-Open index.html with a browser (if this was set as the first page).
 
 .. |logo| image:: docs/source/_static/logo.svg
     :alt: Logo
