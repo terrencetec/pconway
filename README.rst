@@ -129,6 +129,6 @@ Try out the package and file an issue if you find any!
     :alt: codecov
     :target: https://codecov.io/gh/terrencetec/pconway
 
-.. |screenshot default| image:: images/screenshot_default.png
+.. |screenshot default| image:: images/screenshot_31x66.png
     :alt: screenshot default
-    :target: https://github.com/terrencetec/pconway/images/screenshot_default.png
+    :target: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png
