@@ -27,7 +27,7 @@ Dependencies
 Required
 ^^^^^^^^
 * Numpy
-* Curse (Included in the Linux version of Python. For Windows users,
+* Curses (Included in the Linux version of Python. For Windows users,
   install windows-curse)
 
 Installation
