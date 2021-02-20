@@ -67,6 +67,7 @@ or
 Usage
 =====
 .. code:: bash
+
   $ gameoflife -h
   usage: gameoflife [-h]
                     [-c {black,blue,cyan,green,magenta,red,white,yellow}]
