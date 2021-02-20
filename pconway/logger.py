@@ -1,7 +1,7 @@
 import logging
 
 
-logger = logging.getLogger("mypythonlibrary")
+logger = logging.getLogger("pconway")
 
 logger.setLevel(logging.DEBUG)
 

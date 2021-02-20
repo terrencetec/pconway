@@ -26,12 +26,13 @@ MICRO = 0
 VERSION = '%d.%d.%d'%(MAJOR,MINOR,MICRO)
 
 setup(
-    name='mypythonlibrary',  # Required
+    name='pconway',  # Required
     version=VERSION,  # Required
-    description='A template for creating new python library',  # Optional
+    description="Conway's Game of Life Terminal Eye Candy implemented in "
+                "Python.",  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/x-rst',  # Optional (see note above)
-    url='https://github.com/terrencetec/mypythonlibrary',  # Optional
+    url='https://github.com/terrencetec/pconway',  # Optional
     author='TSANG Terrence Tak Lun',  # Optional
     author_email='terrencetec@gmail.com',  # Optional
     keywords='sample, setuptools, development',  # Optional
@@ -56,8 +57,8 @@ setup(
     #     'sample': ['package_data.dat'],
     # },
     entry_points={
-        'console_scripts': [
-            'print-hello-worlds=mypythonlibrary.clitools.print_hello_worlds:main'
+        "console_scripts": [
+            "gameoflife=pconway.clitools.gameoflife:main"
         ],
     }
     # List additional URLs that are relevant to your project as a dict.
