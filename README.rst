@@ -68,6 +68,14 @@ Usage
 =====
 .. code:: bash
 
+   $ gameoflife
+
+|screenshot default|
+
+Help message
+------------
+.. code:: bash
+
   $ gameoflife -h
   usage: gameoflife [-h]
                     [-c {black,blue,cyan,green,magenta,red,white,yellow}]
@@ -120,3 +128,7 @@ Try out the package and file an issue if you find any!
 .. |codecov| image:: https://codecov.io/gh/terrencetec/pconway/branch/master/graph/badge.svg?token=NMEBAYFE2N
     :alt: codecov
     :target: https://codecov.io/gh/terrencetec/pconway
+
+.. |screenshot default| image:: images/screenshot_default.png
+    :alt: screenshot default
+    :target: https://codecov.io/gh/terrencetec/pconway/images/screenshot_default.png

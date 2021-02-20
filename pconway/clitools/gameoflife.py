@@ -4,7 +4,7 @@ import argparse
 def parser():
     parser = argparse.ArgumentParser(description="Play Conway's game of life")
     parser.add_argument(
-        "-c", "--color", type=str, help="Foreground color. Defaults 'white'",
+        "-c", "--color", type=str, help="Foreground color. Defaults 'white'.",
         choices=["black", "blue", "cyan", "green", "magenta", "red", "white",
                  "yellow"],
         default="white")
