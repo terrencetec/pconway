@@ -17,8 +17,8 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'mypythonlibrary'
-copyright = '2020, Tsang Terrence Tak Lun'
+project = 'pconway'
+copyright = '2021, Tsang Terrence Tak Lun'
 author = 'Tsang Terrence Tak Lun'
 
 # The full version, including alpha/beta/rc tags
