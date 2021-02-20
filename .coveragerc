@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = mypythonlibrary
+source = pconway
 
 [report]
 exclude_lines =

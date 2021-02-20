@@ -4,7 +4,7 @@ Library Reference
 hello world
 -----------
 
-.. automodule:: mypythonlibrary.helloworld.helloworld
+.. automodule:: pyconway.helloworld.helloworld
    :members:
    :undoc-members:
    :show-inheritance:

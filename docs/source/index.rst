@@ -1,58 +1,46 @@
-.. mypythonlibrary documentation master file, created by
-   sphinx-quickstart on Sun Sep 20 18:51:56 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-My Python Library
-=================
-
-*One-line description here!*
+*Conway's Game of Life Terminal Eye Candy implemented in Python.*
 
 |website| |release| |rtd| |license| |travis-ci| |codecov|
 
-My Python Library
-=================
-
-This is a template for creating new python library. Here are some descriptions!
+PConway
+=======
 
 **features**
 
-* print Hello World!
-* print many Hello Worlds!
-* command line tools for printing a lot of Hello Worlds!
+* Play Conway's Game of Life on your terminal.
 
-**Documentation**: https://mypythonlibrary.readthedocs.io
+**Documentation**: https://pconway.readthedocs.io
 
-**Repository**: https://github.com/terrencetec/mypythonlibrary
+**Repository**: https://github.com/terrencetec/pconway
 
 
 .. |logo| image:: docs/source/_static/logo.svg
     :alt: Logo
-    :target: https://github.com/terrencetec/mypythonlibrary
+    :target: https://github.com/terrencetec/pconway
 
-.. |website| image:: https://img.shields.io/badge/website-mypythonlibrary-blue.svg
+.. |website| image:: https://img.shields.io/badge/website-pconway-blue.svg
     :alt: Website
-    :target: https://github.com/terrencetec/mypythonlibrary
+    :target: https://github.com/terrencetec/pconway
 
-.. |release| image:: https://img.shields.io/github/v/release/terrencetec/mypythonlibrary?include_prereleases
+.. |release| image:: https://img.shields.io/github/v/release/terrencetec/pconway?include_prereleases
    :alt: Release
-   :target: https://github.com/terrencetec/mypythonlibrary/releases
+   :target: https://github.com/terrencetec/pconway/releases
 
-.. |rtd| image:: https://readthedocs.org/projects/mypythonlibrary/badge/?version=latest
+.. |rtd| image:: https://readthedocs.org/projects/pconway/badge/?version=latest
    :alt: Read the Docs
-   :target: https://mypythonlibrary.readthedocs.io/
+   :target: https://pconway.readthedocs.io/
 
-.. |license| image:: https://img.shields.io/github/license/terrencetec/mypythonlibrary
+.. |license| image:: https://img.shields.io/github/license/terrencetec/pconway
     :alt: License
-    :target: https://github.com/terrencetec/mypythonlibrary/blob/master/LICENSE
+    :target: https://github.com/terrencetec/pconway/blob/master/LICENSE
 
-.. |travis-ci| image:: https://travis-ci.com/terrencetec/mypythonlibrary.svg?branch=master
+.. |travis-ci| image:: https://travis-ci.com/terrencetec/pconway.svg?branch=master
     :alt: travis-ci
-    :target: https://travis-ci.com/terrencetec/mypythonlibrary
+    :target: https://travis-ci.com/terrencetec/pconway
 
-.. |codecov| image:: https://codecov.io/gh/terrencetec/mypythonlibrary/branch/master/graph/badge.svg?token=NMEBAYFE2N
+.. |codecov| image:: https://codecov.io/gh/terrencetec/pconway/branch/master/graph/badge.svg?token=NMEBAYFE2N
     :alt: codecov
-    :target: https://codecov.io/gh/terrencetec/mypythonlibrary
+    :target: https://codecov.io/gh/terrencetec/pconway
 
 
 .. toctree::

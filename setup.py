@@ -1,5 +1,5 @@
-"""My Python Library
-A template for creating new python library
+"""Pconway
+Conway's Game of Life Terminal Eye Candy implemented in Python
 
 Fetched from:
 A setuptools based setup module.

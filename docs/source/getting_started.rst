@@ -43,6 +43,6 @@ Install from source
 
 .. code:: bash
 
-   git clone https://github.com/terrencetec/mypythonlibrary.git
-   cd mypythonlibrary
+   git clone https://github.com/terrencetec/pconway.git
+   cd pconway
    pip install .
