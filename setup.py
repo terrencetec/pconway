@@ -20,10 +20,8 @@ long_description = (here / 'README.rst').read_text(encoding='utf-8')
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
 
-MAJOR = 0
-MINOR = 0
-MICRO = 0
-VERSION = '%d.%d.%d'%(MAJOR,MINOR,MICRO)
+from pconway.__version__ import VERSION
+
 
 setup(
     name='pconway',  # Required

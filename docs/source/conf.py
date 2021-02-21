@@ -22,7 +22,8 @@ copyright = '2021, Tsang Terrence Tak Lun'
 author = 'Tsang Terrence Tak Lun'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.0'
+from pconway.__version__ import VERSION
+release = VERSION
 
 
 # -- General configuration ---------------------------------------------------
