@@ -1,21 +1,21 @@
 Library Reference
 =================
 
-Game of life
+Game of Life
 ------------
 
-.. automodule:: pyconway.core.gameoflife
+.. automodule:: pconway.core.gameoflife
    :members:
    :undoc-members:
    :show-inheritance:
 
-Game of life Classes
+Game of Life Classes
 --------------------
 
 Base
 ^^^^
 
-.. automodule:: pyconway.core.game
+.. automodule:: pconway.core.game
    :members:
    :undoc-members:
    :show-inheritance:
@@ -23,7 +23,7 @@ Base
 Custom Games
 ^^^^^^^^^^^^
 
-.. automodule:: pyconway.core.custom_game
+.. automodule:: pconway.core.custom_game
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ Custom Games
 Render
 ------
 
-.. automodule:: pyconway.render.play
+.. automodule:: pconway.render.play
    :members:
    :undoc-members:
    :show-inheritance:
