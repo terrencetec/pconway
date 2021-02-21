@@ -131,5 +131,6 @@ Try out the package and file an issue if you find any!
 
 .. |screenshot default| image:: images/screenshot_31x66.png
     :width: 128
+    :height: 128
     :alt: screenshot default
     :target: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png
