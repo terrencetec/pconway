@@ -16,8 +16,11 @@ def parser():
         default=10)
     parser.add_argument("-m", "--mutation-rate", type=float,
         help="Mutation rate.", default=0.)
-    # paraser.add_argument("--seed", type=int,
-    #     help="Random number generator seed", )
+    parser.add_argument("--seed", type=int,
+        help="Random number generator seed", default=123)
+    parser.add_argument("-d", "--duration", type=float,
+        help="Duration (seconds). Negative means infinte. Defaults -1.",
+        default=-1)
     return parser
 
 
@@ -33,9 +36,12 @@ def main(args=None):
     borderless = not options.border
     fps = options.speed
     mutation_rate = options.mutation_rate
+    seed = options.seed
+    duration = options.duration
     kwargs={
-        "mutation_rate": mutation_rate
+        "mutation_rate": mutation_rate,
+        "seed": seed,
     }
     pconway.play(
         fg_color=fg_color, alive_char=alive_char, borderless=borderless,
-        fps=fps, kwargs=kwargs)
+        fps=fps, duration=duration, kwargs=kwargs)

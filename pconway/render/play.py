@@ -5,7 +5,8 @@ import time
 
 
 def play(game_type="random", fps=10, alive_char="o", dead_char=" ",
-         fg_color="white", bg_color="black", borderless=True, kwargs={}):
+         fg_color="white", bg_color="black", borderless=True,
+         duration=-1, kwargs={}):
     """Plays the game of life.
 
     Parameters
@@ -14,22 +15,35 @@ def play(game_type="random", fps=10, alive_char="o", dead_char=" ",
         "random", ... or ...
     fps: int
         Frame per second.
-    alive_char: str
+    alive_char: str, optional
         The character representing a live cell.
-    dead_char: str
+        Defaults to "o"
+    dead_char: str, optional
         The character representing a dead cell.
-    fg_color: str
+        Defaults to " "
+    fg_color: str, optional
         Foreground color.
         One of "black", "blue", "cyan", "green", "magenta", "red", "white",
         "yellow".
-        Defaults to white.
-    bg_color: str
+        Defaults to "white".
+    bg_color: str, optional
         Background color.
         One of "black", "blue", "cyan", "green", "magenta", "red", "white",
         "yellow".
-        Defaults to black.
+        Defaults to "black".
+    borderless: bool, optional
+        Borderless.
+        Defaults to True.
+    duration: float, optional
+        Duration of the game in seconds. Negative means play indefinitely.
+        Defaults to -1.
     **kwargs: dict
         Keyword arguments passed to the pconway.core.game.Game class.
+
+    Returns
+    -------
+    Boolean
+        Returns True when finished.
     """
     if game_type == "random":
         import pconway.core.custom_game
@@ -89,17 +103,26 @@ def play(game_type="random", fps=10, alive_char="o", dead_char=" ",
             # stdscr.addstr("size: {}, {}".format(ncol, nrow))
             # stdscr.addch(30,64, "1")
             # stdscr.getch()
-            while 1:
-                t = time.time()
-                for i in range(len(game.matrix)):
-                    for j in range(len(game.matrix[i])):
-                        if game.matrix[i][j] > 0:
-                            stdscr.addch(i+1, j+1, alive_char)
-                        else:
-                            stdscr.addch(i+1, j+1, dead_char)
-                stdscr.refresh()
-                game.evolve()
-                while time.time()-t <= 1/fps:
-                    pass
-
+            start_t = time.time()
+            try:
+                while 1:
+                    t = time.time()
+                    for i in range(len(game.matrix)):
+                        for j in range(len(game.matrix[i])):
+                            if game.matrix[i][j] > 0:
+                                stdscr.addch(i+1, j+1, alive_char)
+                            else:
+                                stdscr.addch(i+1, j+1, dead_char)
+                    stdscr.refresh()
+                    game.evolve()
+                    while time.time()-t <= 1/fps:
+                        pass
+                    if duration > 0 and time.time() - start_t > duration:
+                        break
+            except KeyboardInterrupt:
+                pass
+    else:
+        raise ValueError("game_type must be one of the followings"
+                         "['random']")
     curses.wrapper(curse_main)
+    return True
