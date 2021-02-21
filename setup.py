@@ -22,7 +22,7 @@ long_description = (here / 'README.rst').read_text(encoding='utf-8')
 
 MAJOR = 1
 MINOR = 0
-MICRO = 0
+MICRO = 1
 VERSION = '%d.%d.%d'%(MAJOR,MINOR,MICRO)
 
 setup(
