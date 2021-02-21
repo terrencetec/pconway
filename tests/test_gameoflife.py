@@ -30,6 +30,7 @@ random_matrix = np.array(
         [1,1,1,0]
     ]
 )
+test = 1
 
 def test_compute_next_state():
     test_matrix = pconway.core.gameoflife.compute_next_state(initial_matrix)

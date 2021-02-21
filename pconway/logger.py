@@ -1,6 +1,6 @@
 import logging
 
-
+test=1
 logger = logging.getLogger("pconway")
 
 logger.setLevel(logging.DEBUG)
