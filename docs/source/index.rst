@@ -8,6 +8,8 @@ PConway
 **features**
 
 * Play Conway's Game of Life on your terminal.
+* Added mutation feature so the game never terminates (which makes it
+  a terminal eye candy!).
 
 **Documentation**: https://pconway.readthedocs.io
 
@@ -49,6 +51,7 @@ PConway
 
    self
    getting_started
+   usage
    library_reference
    how_to_contribute
    for_developers

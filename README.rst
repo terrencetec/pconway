@@ -4,9 +4,6 @@
 
 |website| |release| |rtd| |license| |travis-ci| |codecov|
 
-PConway
-=======
-
 **features**
 
 * Play Conway's Game of Life on your terminal.
@@ -66,6 +63,8 @@ or
 
 Usage
 =====
+Command
+-------
 .. code:: bash
 
    $ gameoflife

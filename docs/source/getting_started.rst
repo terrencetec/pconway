@@ -1,48 +1,44 @@
 Getting Started
 ===============
-.. contents::
-   :depth: 2
 
 Dependencies
 ------------
 
 Required
 ^^^^^^^^
-* Package 1
-* Package 2
-* Package 3
+* Numpy
+* Curses (Included in the Linux version of Python. For Windows users,
+  install windows-curse)
 
-Optional
-^^^^^^^^
-* Package 4
-
-Note on installing dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In principle, if you are using :code:`pip`, you don't have to install
-dependencies beforehand. When you install this package, :code`pip` will
-automatically install the required libraries. However if you are using Conda
-it is best to use its own package manager and not pip unless absolutely
-necessary.
-
-If you use conda:
-
-.. code:: bash
-
-   conda install -c conda-forge package1 package2
-
-Now, let's say package 3 is not available, then we can use pip. But,
-be sure to use :code:`which pip` to check if we are using the pip installed
-on the conda environment and not the global one.
-
-.. code:: bash
-
-   pip install package3
-
-Install from source
--------------------
-
+Installation
+------------
+From source
+^^^^^^^^^^^
 .. code:: bash
 
    git clone https://github.com/terrencetec/pconway.git
    cd pconway
    pip install .
+
+Debian based
+^^^^^^^^^^^^
+(Not available yet)
+
+.. code:: bash
+
+   sudo apt-get install pconway
+
+Arch-based
+^^^^^^^^^^
+(Not available yet)
+Install from AUR:
+
+.. code:: bash
+
+   paru -Syu pconway
+
+or
+
+.. code:: bash
+
+   yay -Syu pconway
