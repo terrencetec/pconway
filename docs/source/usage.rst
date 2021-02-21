@@ -31,6 +31,6 @@ Help message
     -m MUTATION_RATE, --mutation-rate MUTATION_RATE
                           Mutation rate
 
-.. |screenshot default| image:: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png
+.. |screenshot default| image:: _static/screenshot_31x66.png
     :alt: screenshot default
     :target: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png
