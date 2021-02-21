@@ -81,14 +81,14 @@ Help message
                     [-c {black,blue,cyan,green,magenta,red,white,yellow}]
                     [-C CHAR] [-b] [-s SPEED] [-m MUTATION_RATE]
 
-  Play Conway's game of life
+  Play Conway\'s game of life
 
   optional arguments:
     -h, --help            show this help message and exit
     -c {black,blue,cyan,green,magenta,red,white,yellow}, --color {black,blue,cyan,green,magenta,red,white,yellow}
-                          Foreground color. Defaults 'white'
+                          Foreground color. Defaults \'white\'
     -C CHAR, --char CHAR  Character representing live cells.
-                          Defaults 'o'.
+                          Defaults \'o\'.
     -b, --border          Border on the screen
     -s SPEED, --speed SPEED
                           Frame per second
