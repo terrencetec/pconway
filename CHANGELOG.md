@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] 2012-02-22
+### Removed
+- __init__.py in pconway/tests/ so it's not interpreted as a module.
+
 ## [1.0.1] 2021-02-22
 ### Fixed
 - Images links PyPI
@@ -26,5 +30,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   standardized open source project CHANGELOG.
 
 [Unreleased]: https://github.com/terrencetec/pconway
+[1.0.2]: https://github.com/terrencetec/pconway/releases/tag/v1.0.2
 [1.0.1]: https://github.com/terrencetec/pconway/releases/tag/v1.0.1
 [1.0.0]: https://github.com/terrencetec/pconway/releases/tag/v1.0.0
