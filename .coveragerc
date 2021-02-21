@@ -13,3 +13,4 @@ omit =
     tests/*
     pconway/clitools/*
     pconway/logger.py
+    pconway/render/*
