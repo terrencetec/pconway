@@ -3,7 +3,7 @@ PConway
 
 *Conway's Game of Life Terminal Eye Candy implemented in Python.*
 
-|website| |release| |rtd| |license| |travis-ci| |codecov|
+|website| |release| |rtd| |license| |travis-ci| |codecov| |pypi|
 
 **features**
 
@@ -16,7 +16,7 @@ PConway
 **Repository**: https://github.com/terrencetec/pconway
 
 
-.. |logo| image:: docs/source/_static/logo.svg
+.. |logo| image:: https://github.com/terrencetec/pconway/blob/master/images/logo.png?raw=true
     :alt: Logo
     :target: https://github.com/terrencetec/pconway
 
@@ -43,6 +43,10 @@ PConway
 .. |codecov| image:: https://codecov.io/gh/terrencetec/pconway/branch/master/graph/badge.svg?token=NMEBAYFE2N
     :alt: codecov
     :target: https://codecov.io/gh/terrencetec/pconway
+
+.. |pypi| image:: https://badge.fury.io/py/pconway.svg
+   :alt: pypi
+   :target: https://badge.fury.io/py/pconway
 
 
 .. toctree::

@@ -12,6 +12,12 @@ Required
 
 Installation
 ------------
+From Pypi
+^^^^^^^^^
+.. code:: bash
+
+   pip install pconway
+
 From source
 ^^^^^^^^^^^
 .. code:: bash
