@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.1] 2021-02-22
+### Fixed
+- Images links PyPI
+
+## [1.0.0] 2021-02-21
 ### Added
 - pconway.clitools.gameoflife() Play Conway's game of life from commandline.
 - pconway.render.play Play Conway's game of life and render the game using
@@ -20,3 +26,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   standardized open source project CHANGELOG.
 
 [Unreleased]: https://github.com/terrencetec/pconway
+[1.0.1]: https://github.com/terrencetec/pconway/releases/tag/v1.0.1
+[1.0.0]: https://github.com/terrencetec/pconway/releases/tag/v1.0.0
