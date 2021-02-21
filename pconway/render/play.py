@@ -98,11 +98,10 @@ def play(game_type="random", fps=10, alive_char="o", dead_char=" ",
 
             if not borderless:
                 stdscr.border()
+
             game = pconway.core.custom_game.RandomGame(
                 nrow=nrow, ncol=ncol, **kwargs)
-            # stdscr.addstr("size: {}, {}".format(ncol, nrow))
-            # stdscr.addch(30,64, "1")
-            # stdscr.getch()
+
             start_t = time.time()
             try:
                 while 1:

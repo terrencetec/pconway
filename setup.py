@@ -20,8 +20,10 @@ long_description = (here / 'README.rst').read_text(encoding='utf-8')
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
 
-from pconway.__version__ import VERSION
-
+MAJOR = 1
+MINOR = 0
+MICRO = 0
+VERSION = '%d.%d.%d'%(MAJOR,MINOR,MICRO)
 
 setup(
     name='pconway',  # Required
@@ -58,7 +60,12 @@ setup(
         "console_scripts": [
             "gameoflife=pconway.clitools.gameoflife:main"
         ],
-    }
+    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
     # List additional URLs that are relevant to your project as a dict.
     #
     # This field corresponds to the "Project-URL" metadata fields:
