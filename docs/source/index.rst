@@ -46,7 +46,7 @@ PConway
 
 .. |pypi| image:: https://badge.fury.io/py/pconway.svg
    :alt: pypi
-   :target: https://badge.fury.io/py/pconway
+   :target: https://pypi.org/project/pconway/
 
 
 .. toctree::
