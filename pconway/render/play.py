@@ -114,8 +114,9 @@ def play(game_type="random", fps=10, alive_char="o", dead_char=" ",
                                 stdscr.addch(i+1, j+1, dead_char)
                     stdscr.refresh()
                     game.evolve()
-                    while time.time()-t <= 1/fps:
-                        pass
+                    elapsed = time.time() - t
+                    if elapsed < 1/fps:
+                        time.sleep(1/fps - elapsed)
                     if duration > 0 and time.time() - start_t > duration:
                         break
             except KeyboardInterrupt:
