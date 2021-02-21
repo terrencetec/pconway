@@ -1,9 +1,9 @@
+PConway
+=======
+
 *Conway's Game of Life Terminal Eye Candy implemented in Python.*
 
 |website| |release| |rtd| |license| |travis-ci| |codecov|
-
-PConway
-=======
 
 **features**
 
