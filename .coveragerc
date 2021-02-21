@@ -11,3 +11,5 @@ exclude_lines =
 ignore_errors = True
 omit =
     tests/*
+    pconway/clitools/*
+    pconway/logger.py

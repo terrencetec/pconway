@@ -29,6 +29,7 @@ class RandomGame(pconway.core.game.GameOfLife):
             This applies after each evolution.
             Defaults to 0.
         """
+        np.random.seed(seed)
         matrix = np.zeros((nrow, ncol))
         matrix = pconway.mutation(matrix=matrix, mutation_rate=spawn_rate)
         super().__init__(matrix=matrix, mutation_rate=mutation_rate)
