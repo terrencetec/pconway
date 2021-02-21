@@ -100,7 +100,7 @@ How to Contribute
 Try out the package and file an issue if you find any!
 
 
-.. |logo| image:: docs/source/_static/logo.svg
+.. |logo| image:: https://github.com/terrencetec/pconway/blob/master/images/logo.png?raw=true
     :alt: Logo
     :target: https://github.com/terrencetec/pconway
 
@@ -128,8 +128,6 @@ Try out the package and file an issue if you find any!
     :alt: codecov
     :target: https://codecov.io/gh/terrencetec/pconway
 
-.. |screenshot default| image:: images/screenshot_31x66.png
-    :width: 800
-    :height: 66
+.. |screenshot default| image:: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png?raw=true
     :alt: screenshot default
     :target: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png
