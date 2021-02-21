@@ -130,7 +130,7 @@ Try out the package and file an issue if you find any!
     :target: https://codecov.io/gh/terrencetec/pconway
 
 .. |screenshot default| image:: images/screenshot_31x66.png
-    :width: 128
-    :height: 128
+    :width: 31
+    :height: 66
     :alt: screenshot default
     :target: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png
