@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Put tests in the module instead.
+- [pconway.render.play] Compute wait time efficiently by using time.sleep()
 
 ## [1.0.2] 2012-02-22
 ### Removed
