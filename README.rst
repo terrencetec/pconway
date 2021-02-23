@@ -29,7 +29,7 @@ Required
 
 Installation
 ------------
-From Pypi
+From PyPI
 ^^^^^^^^^
 .. code:: bash
 
