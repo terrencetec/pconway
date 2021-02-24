@@ -49,5 +49,5 @@ class RandomGame(pconway.core.game.GameOfLife):
         """
         np.random.seed(seed)
         matrix = np.zeros((nrow, ncol))
-        matrix = pconway.mutation(matrix=matrix, mutation_rate=spawn_rate)
+        matrix = np.random.choice([1,0], size=(nrow,ncol), p=[spawn_rate,1-spawn_rate])
         super().__init__(matrix=matrix, mutation_rate=mutation_rate)

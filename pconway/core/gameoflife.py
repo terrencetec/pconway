@@ -129,12 +129,14 @@ def mutation(matrix, mutation_rate):
     matrix: array
         The mutated matrix.
     """
-    random_matrix = np.random.rand(np.shape(matrix)[0], np.shape(matrix)[1])
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            if random_matrix[i][j] < mutation_rate:
-                if matrix[i][j] > 0:
-                    matrix[i][j] = 0
-                else:
-                    matrix[i][j] = 1
+    i_max = np.shape(matrix)[0]
+    j_max = np.shape(matrix)[1]
+    mutation_amount = int(mutation_rate * i_max * j_max)
+    for n in range(mutation_amount):
+        i = np.random.randint(i_max)
+        j = np.random.randint(j_max)
+        if matrix[i][j] > 0:
+            matrix[i][j] = 0
+        else:
+            matrix[i][j] = 1
     return matrix
