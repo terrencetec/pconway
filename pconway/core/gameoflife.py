@@ -131,7 +131,9 @@ def mutation(matrix, mutation_rate):
     """
     i_max = np.shape(matrix)[0]
     j_max = np.shape(matrix)[1]
-    mutation_amount = int(mutation_rate * i_max * j_max)
+    mu = int(mutation_rate * i_max * j_max)
+    sigma = mu/2
+    mutation_amount = int(np.random.normal(mu,sigma))
     for n in range(mutation_amount):
         i = np.random.randint(i_max)
         j = np.random.randint(j_max)
