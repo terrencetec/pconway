@@ -29,8 +29,9 @@ def compute_next_state(matrix):
     alive_matrix = get_alive_matrix(matrix)
     # For each cell, check the number of lives around itself and apply
     # the Conway's game of life rules.
-    next_matrix = np.vectorize(compute_cell_next_state)(matrix,alive_matrix)
+    next_matrix = np.vectorize(compute_cell_next_state)(matrix, alive_matrix)
     return next_matrix
+
 
 def compute_cell_next_state(current, neighbours):
     """Return the next state of the cell on position (i, j) in alive_matrix.
@@ -138,5 +139,5 @@ def mutation(matrix, mutation_rate):
     matrix: array
         The mutated matrix.
     """
-    random_binomial = np.random.binomial(1,mutation_rate,np.shape(matrix))
-    return np.bitwise_xor(matrix,random_binomial)
+    random_binomial = np.random.binomial(1, mutation_rate, np.shape(matrix))
+    return np.bitwise_xor(matrix, random_binomial)

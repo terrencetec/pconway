@@ -32,6 +32,7 @@ random_matrix = np.array(
     ]
 )
 
+
 def test_compute_next_state():
     test_matrix = pconway.core.gameoflife.compute_next_state(initial_matrix)
     assert np.array_equal(test_matrix, final_matrix)

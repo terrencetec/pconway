@@ -9,7 +9,7 @@ def parser():
                  "yellow"],
         default="white")
     parser.add_argument("-C", "--char", type=str,
-        help="Character representing live cells. Defaults 'o'.", default="o")
+        help="Character representing live cells. Defaults '.'.", default=".")
     parser.add_argument("-b", "--border",
         help="Border on the screen", action="store_true")
     parser.add_argument("-s", "--speed", type=int, help="Frame per second",

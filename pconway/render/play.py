@@ -4,7 +4,7 @@ import curses
 import time
 
 
-def play(game_type="random", fps=10, alive_char="o", dead_char=" ",
+def play(game_type="random", fps=10, alive_char=".", dead_char=" ",
          fg_color="white", bg_color="black", borderless=True,
          duration=-1, kwargs={}):
     """Plays the game of life.
