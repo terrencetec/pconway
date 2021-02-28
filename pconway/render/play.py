@@ -17,10 +17,10 @@ def play(game_type="random", fps=10, alive_char=".", dead_char=" ",
         Frame per second.
     alive_char: str, optional
         The character representing a live cell.
-        Defaults to "o"
+        Defaults to ".".
     dead_char: str, optional
         The character representing a dead cell.
-        Defaults to " "
+        Defaults to " ".
     fg_color: str, optional
         Foreground color.
         One of "black", "blue", "cyan", "green", "magenta", "red", "white",

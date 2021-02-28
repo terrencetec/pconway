@@ -35,6 +35,7 @@ def compute_next_state(matrix):
 
 def compute_cell_next_state(current, neighbours):
     """Return the next state of the cell on position (i, j) in alive_matrix.
+    
     Parameters
     ----------
     current: int
