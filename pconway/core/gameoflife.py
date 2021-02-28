@@ -26,20 +26,33 @@ def compute_next_state(matrix):
     live cell.
     """
     matrix = np.array(matrix)
-    next_matrix = np.array(matrix)
     alive_matrix = get_alive_matrix(matrix)
     # For each cell, check the number of lives around itself and apply
     # the Conway's game of life rules.
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            nalive = alive_matrix[i][j]
-            if matrix[i][j] > 0:
-                if nalive < 2 or nalive > 3:
-                    next_matrix[i][j] = 0
-            else:
-                if nalive == 3:
-                    next_matrix[i][j] = 1
+    next_matrix = np.vectorize(compute_cell_next_state)(matrix,alive_matrix)
     return next_matrix
+
+def compute_cell_next_state(current, neighbours):
+    """Return the next state of the cell on position (i, j) in alive_matrix.
+    Parameters
+    ----------
+    current: int
+        The state of the cell, 1 or 0 (live or dead)
+    neighbours: array
+        The number of alive cells around the cell.
+
+    Returns
+    -------
+    new_state: int
+        The new state of the cell, 1 or 0 (live or dead)
+    """
+    new_state = 0
+    if current > 0:
+        if neighbours == 2 or neighbours == 3:
+            new_state = 1
+    elif neighbours == 3:
+        new_state = 1
+    return new_state
 
 
 def get_alive_neighbours(matrix, i, j):
@@ -80,12 +93,8 @@ def get_alive_neighbours(matrix, i, j):
         slice_j_max = j+1+1
     sliced_matrix = matrix[slice_i_min:slice_i_max, slice_j_min:slice_j_max]
 
-    # Count the number of entities that are greater than 0
-    nalive = 0
-    for m in range(len(sliced_matrix)):
-        for n in range(len(sliced_matrix[m])):
-            if sliced_matrix[m][n] > 0:
-                nalive += 1
+    # Count the number of entities that are non zero (alive)
+    nalive = np.count_nonzero(sliced_matrix)
     # uncount our cell of interest:
     if matrix[i][j] > 0:
         nalive -= 1
@@ -129,12 +138,5 @@ def mutation(matrix, mutation_rate):
     matrix: array
         The mutated matrix.
     """
-    random_matrix = np.random.rand(np.shape(matrix)[0], np.shape(matrix)[1])
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            if random_matrix[i][j] < mutation_rate:
-                if matrix[i][j] > 0:
-                    matrix[i][j] = 0
-                else:
-                    matrix[i][j] = 1
-    return matrix
+    random_binomial = np.random.binomial(1,mutation_rate,np.shape(matrix))
+    return np.bitwise_xor(matrix,random_binomial)
