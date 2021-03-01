@@ -106,6 +106,14 @@ def play(game_type="random", fps=10, alive_char=".", dead_char=" ",
             try:
                 while 1:
                     t = time.time()
+
+                    if curses.is_term_resized(nrow+2,ncol+2):
+                        nrow, ncol = stdscr.getmaxyx()
+                        nrow -= 2
+                        ncol -= 2
+                        game = pconway.core.custom_game.RandomGame(
+                            nrow=nrow, ncol=ncol, **kwargs)
+
                     for i in range(len(game.matrix)):
                         for j in range(len(game.matrix[i])):
                             if game.matrix[i][j] > 0:
