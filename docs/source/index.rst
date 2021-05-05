@@ -48,7 +48,7 @@ PConway
    :alt: pypi
    :target: https://pypi.org/project/pconway/
 
-.. |pepy| image:: https://static.pepy.tech/personalized-badge/pconway?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads
+.. |pepy| image:: https://static.pepy.tech/personalized-badge/pconway?period=total&units=international_system&left_color=grey&right_color=orange&left_text=Downloads
    :alt: pepy
    :target: https://pepy.tech/project/pconway
 

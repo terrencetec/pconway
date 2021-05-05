@@ -73,7 +73,7 @@ Command
 -------
 .. code:: bash
 
-   $ gameoflife
+   $ gameoflife -c green -m 0.01
 
 |screenshot default|
 
@@ -93,7 +93,7 @@ Help message
     -c {black,blue,cyan,green,magenta,red,white,yellow}, --color {black,blue,cyan,green,magenta,red,white,yellow}
                           Foreground color. Defaults \'white\'
     -C CHAR, --char CHAR  Character representing live cells.
-                          Defaults \'o\'.
+                          Defaults '.'.
     -b, --border          Border on the screen
     -s SPEED, --speed SPEED
                           Frame per second
@@ -138,7 +138,7 @@ Try out the package and file an issue if you find any!
    :alt: pypi
    :target: https://pypi.org/project/pconway/
 
-.. |pepy| image:: https://static.pepy.tech/personalized-badge/pconway?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads
+.. |pepy| image:: https://static.pepy.tech/personalized-badge/pconway?period=total&units=international_system&left_color=grey&right_color=orange&left_text=Downloads
    :alt: pepy
    :target: https://pepy.tech/project/pconway
 
