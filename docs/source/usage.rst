@@ -31,6 +31,6 @@ Help message
     -m MUTATION_RATE, --mutation-rate MUTATION_RATE
                           Mutation rate
 
-.. |screenshot default| image:: https://github.com/terrencetec/pconway/blob/master/images/gameoflife_c_green_m_001_1024_512.gif
+.. |screenshot default| image:: _static/gameoflife_c_green_m_001_1024_512.gif
     :alt: screenshot default
     :target: https://github.com/terrencetec/pconway/blob/master/images/gameoflife_c_green_m_001_1024_512.gif
