@@ -142,6 +142,6 @@ Try out the package and file an issue if you find any!
    :alt: pepy
    :target: https://pepy.tech/project/pconway
 
-.. |screenshot default| image:: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png?raw=true
+.. |screenshot default| image:: https://github.com/terrencetec/pconway/blob/master/images/gameoflife_c_green_m_001_1024_512.gif
     :alt: screenshot default
-    :target: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png
+    :target: https://github.com/terrencetec/pconway/blob/master/images/gameoflife_c_green_m_001_1024_512.gif
