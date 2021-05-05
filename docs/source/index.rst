@@ -3,7 +3,7 @@ PConway
 
 *Conway's Game of Life Terminal Eye Candy implemented in Python.*
 
-|website| |release| |rtd| |license| |travis-ci| |codecov| |pypi|
+|website| |release| |rtd| |license| |travis-ci| |codecov| |pypi| |pepy|
 
 **features**
 
@@ -48,6 +48,9 @@ PConway
    :alt: pypi
    :target: https://pypi.org/project/pconway/
 
+.. |pepy| image:: https://static.pepy.tech/personalized-badge/pconway?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads
+   :alt: pepy
+   :target: https://pepy.tech/project/pconway
 
 .. toctree::
    :maxdepth: 2

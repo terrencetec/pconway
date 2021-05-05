@@ -2,7 +2,7 @@
 
 *Conway's Game of Life Terminal Eye Candy implemented in Python.*
 
-|website| |release| |rtd| |license| |travis-ci| |codecov| |pypi|
+|website| |release| |rtd| |license| |travis-ci| |codecov| |pypi| |pepy|
 
 **features**
 
@@ -137,6 +137,10 @@ Try out the package and file an issue if you find any!
 .. |pypi| image:: https://badge.fury.io/py/pconway.svg
    :alt: pypi
    :target: https://pypi.org/project/pconway/
+
+.. |pepy| image:: https://static.pepy.tech/personalized-badge/pconway?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads
+   :alt: pepy
+   :target: https://pepy.tech/project/pconway
 
 .. |screenshot default| image:: https://github.com/terrencetec/pconway/blob/master/images/screenshot_31x66.png?raw=true
     :alt: screenshot default
